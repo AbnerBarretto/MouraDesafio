@@ -17,8 +17,12 @@ O objetivo principal é demonstrar o ciclo completo de desenvolvimento Web3, des
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do contrato (Solidity)](./MouraBateria.sol) ou [baixar o repositório completo](https://github.com/AbnerBarretto/MouraBateria/archive/refs/heads/main.zip) (substitua o link pelo seu repositório real).
+Você pode interagir com a aplicação diretamente pelo **deploy online** ou acessar o código-fonte:
 
+- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio.vercel.app/#)
+- **💻 Código Fonte (GitHub):** [Acessar o código-fonte do Contrato e Frontend](URL_DO_SEU_REPOSITORIO)
+- **⬇️ Baixar o Código:** [Baixar repositório completo](URL_DE_DOWNLOAD_DO_SEU_REPOSITORIO)
+- 
 ## 🛠️ Abrir e rodar o projeto
 
 1. **Clone ou baixe** o repositório.
