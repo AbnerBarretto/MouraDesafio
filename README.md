@@ -2,7 +2,7 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20DESENVOLVIDO&color=GREEN&style=for-the-badge)
 
 ## Resumo do projeto
-Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**. A aplicação, chamada `MouraBateria`, funciona como um registro descentralizado de baterias defeituosas em uma Blockchain compatível com Ethereum (como a Rede de Teste Sepolia).
+Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**. A aplicação, chamada `MouraBateria`, funciona como um registro descentralizado de baterias defeituosas em uma **Blockchain de Camada 2 (L2)** compatível com a Ethereum Virtual Machine (EVM), utilizando a **Rede de Teste Arbitrum Sepolia**. 
 
 O objetivo principal é demonstrar o ciclo completo de desenvolvimento Web3, desde a codificação do contrato em Solidity (incluindo lógica de manipulação de arrays como o "Swap and Pop") até a interface de usuário em HTML/JavaScript que interage com a Blockchain através do Ethers.js e MetaMask.
 
@@ -22,21 +22,23 @@ Você pode interagir com a aplicação diretamente pelo **deploy online** ou ace
 - **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio.vercel.app/#)
 - **💻 Código Fonte (GitHub):** [Acessar o código-fonte do Contrato e Frontend](URL_DO_SEU_REPOSITORIO)
 - **⬇️ Baixar o Código:** [Baixar repositório completo](URL_DE_DOWNLOAD_DO_SEU_REPOSITORIO)
-- 
-## 🛠️ Abrir e rodar o projeto
+
+## 🛠️ Abrir e interagir com o projeto
+
+A forma mais rápida de usar é através do **deploy online**. Se você for rodar localmente, siga os passos abaixo:
 
 1. **Clone ou baixe** o repositório.
-2. **Implante o Contrato:** Utilize o **Remix IDE** para compilar e implantar o arquivo `MouraBateria.sol` em uma rede de testes (ex: Sepolia).
-3. **Obtenha o Endereço:** Copie o **endereço do novo contrato** após a implantação.
-4. **Configure o Frontend:** No arquivo `index.html` (ou no arquivo JS), substitua a variável `CONTRACT_ADDRESS` pelo novo endereço copiado.
-5. **Execute a Aplicação:** Abra o arquivo `index.html` em seu navegador.
-6. **Conecte o MetaMask:** Certifique-se de que o MetaMask está na rede de teste correta e conectado à sua aplicação.
+2. **Execute a Aplicação:** Abra o arquivo `index.html` em seu navegador.
+3. **Configure o MetaMask:** Verifique se sua carteira MetaMask está conectada à **Rede de Teste Arbitrum Sepolia**.
+4. **Interaja:** Clique em "Conectar Carteira" e comece a registrar, remover e atualizar baterias defeituosas.
+
+> **Nota:** O endereço do Contrato Inteligente já está configurado no arquivo `index.html` e aponta para a versão mais recente na Arbitrum Sepolia. Se for necessário um novo deploy, siga o processo do Remix.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - **Solidity** (Linguagem do Smart Contract)
 - **Ethereum** / EVM (Máquina Virtual Ethereum)
-- **Rede de Teste** (Sepolia)
+- **Rede de Teste Arbitrum Sepolia**
 - **Remix IDE** (Para desenvolvimento e deploy)
 - **HTML/CSS/JavaScript** (Para o Frontend)
 - **Ethers.js** (Para a comunicação JavaScript/Blockchain)
@@ -52,5 +54,5 @@ Você pode interagir com a aplicação diretamente pelo **deploy online** ou ace
 
 ## Desenvolvido por [Abner Barreto e João Henrique].
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/166763846?v=4" width=115><br><sub>Abner Barreto</sub>](https://github.com/AbnerBarretto) | [<img loading="lazy" src="https://github.com/lordpipoca.png" width=115><br><sub>João Henrique</sub>](https://github.com/lordpipoca) |
+| [<img loading="lazy" src="https://github.com/AbnerBarretto.png" width=115><br><sub>Abner Barreto</sub>](https://github.com/AbnerBarretto) | [<img loading="lazy" src="https://github.com/lordpipoca.png" width=115><br><sub>João Henrique</sub>](https://github.com/lordpipoca) |
 | :---: | :---: |
