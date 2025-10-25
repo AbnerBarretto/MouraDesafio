@@ -100,7 +100,7 @@ Este projeto é um MVP funcional. Os seguintes recursos e otimizações estão p
 
 ### Front-end e Usabilidade (UX)
 
-- [ ] **Adicionar Filtros:** Implementar um campo de busca/filtro na seção de listagem por Número de Série, Lote ou Tipo de Bateria.
+- [x] **Adicionar Filtros:** Implementar um campo de busca/filtro na seção de listagem por Número de Série, Lote ou Tipo de Bateria.
 - [ ] **Reforçar Validação:** Adicionar validações de formato (RegEx) para campos de entrada como "Número de Série" e "Lote de Fabricação", além de impedir o cadastro de datas futuras.
 - [ ] **Aviso de Rede:** Implementar uma verificação no JavaScript para notificar o usuário caso ele esteja conectado a uma rede diferente da Arbitrum Sepolia.
 
