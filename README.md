@@ -1,61 +1,82 @@
-# <h1 align="center"> MouraBateria Smart Contract (Solidity) </h1>
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20DESENVOLVIDO&color=GREEN&style=for-the-badge)
+# <h1 align="center">MouraBateria Smart Contract (Solidity)</h1>
 
-## Resumo do projeto
-Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**. A aplicação, chamada `MouraBateria`, funciona como um registro descentralizado de baterias defeituosas em uma **Blockchain de Camada 2 (L2)** compatível com a Ethereum Virtual Machine (EVM), utilizando a **Rede de Teste Arbitrum Sepolia**. 
+![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIDO&color=GREEN&style=for-the-badge)
 
-O objetivo principal é demonstrar o ciclo completo de desenvolvimento Web3, desde a codificação do contrato em Solidity (incluindo lógica de manipulação de arrays como o "Swap and Pop") até a interface de usuário em HTML/JavaScript que interage com a Blockchain através do Ethers.js e MetaMask.
+## 🧾 Resumo do projeto
+Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**.  
+A aplicação, chamada `MouraBateria`, atua como um **registro descentralizado de baterias defeituosas** em uma **Blockchain de Camada 2 (L2)** compatível com a **EVM (Ethereum Virtual Machine)**, utilizando a **rede de teste Arbitrum Sepolia**.  
+
+O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** — desde a criação do contrato em Solidity (com lógica de manipulação de arrays via padrão *Swap and Pop*) até a interação com o contrato por meio de uma **interface HTML/JavaScript**, utilizando **Ethers.js** e **MetaMask**.
+
+---
+
+## 🎨 Layout da Aplicação
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ec97ab68-61b0-4434-8598-6d4f76c74536" alt="Interface Moura Bateria" width="850">
+</p>
+<p align="center"><em>Interface principal da aplicação Moura Bateria</em></p>
+
+---
 
 ## 🔨 Funcionalidades do projeto
 
-- **Registro** descentralizado de baterias defeituosas com campos como tipo, uso, número de série e lote.
-- **Listagem** completa de todos os registros de baterias armazenados no contrato.
-- **Remoção** de registros utilizando o padrão "Swap and Pop" para otimização de gás.
-- **Atualização** de todos os dados de um registro existente.
-- **Interação** com o contrato via frontend (HTML/JS) e a carteira MetaMask.
+- **Registro** descentralizado de baterias defeituosas (tipo, uso, número de série e lote).  
+- **Listagem** completa de todos os registros armazenados no contrato.  
+- **Remoção** otimizada de registros usando o padrão *Swap and Pop* para reduzir custo de gás.  
+- **Atualização** de dados de registros existentes.  
+- **Interação** com o contrato via frontend (HTML/JS) e carteira MetaMask.  
 - **Transparência** e imutabilidade dos dados garantidas pela Blockchain.
+
+---
 
 ## 📁 Acesso ao projeto
 
 Você pode interagir com a aplicação diretamente pelo **deploy online** ou acessar o código-fonte:
 
-- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio.vercel.app/#)
-- **💻 Código Fonte (GitHub):** [Acessar o código-fonte do Contrato e Frontend](URL_DO_SEU_REPOSITORIO)
-- **⬇️ Baixar o Código:** [Baixar repositório completo](URL_DE_DOWNLOAD_DO_SEU_REPOSITORIO)
+- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio.vercel.app/#)  
+- **💻 Código Fonte (GitHub):** [Repositório MouraBateria](https://github.com/AbnerBarretto/MouraBateria)  
+- **⬇️ Baixar ZIP:** [Download do Projeto](https://github.com/AbnerBarretto/MouraBateria/archive/refs/heads/main.zip)
 
-## 🛠️ Abrir e interagir com o projeto
+---
 
-A forma mais rápida de usar é através do **deploy online**. Se você for rodar localmente, siga os passos abaixo:
+## 🚀 Como Executar o Projeto Localmente
 
-1. **Clone ou baixe** o repositório.
-2. **Execute a Aplicação:** Abra o arquivo `index.html` em seu navegador.
-3. **Configure o MetaMask:** Verifique se sua carteira MetaMask está conectada à **Rede de Teste Arbitrum Sepolia**.
-4. **Interaja:** Clique em "Conectar Carteira" e comece a registrar, remover e atualizar baterias defeituosas.
+1. **Clone ou baixe** o repositório.  
+2. **Abra o arquivo** `index.html` em seu navegador.  
+3. **Configure o MetaMask:** conecte sua carteira à **Rede de Teste Arbitrum Sepolia**.  
+4. **Interaja:** clique em “Conectar Carteira” e comece a registrar, atualizar e remover baterias defeituosas.  
 
-> **Nota:** O endereço do Contrato Inteligente já está configurado no arquivo `index.html` e aponta para a versão mais recente na Arbitrum Sepolia. Se for necessário um novo deploy, siga o processo do Remix.
+> 💡 **Nota:** O endereço do contrato já está configurado no `index.html`, apontando para a versão mais recente na Arbitrum Sepolia.  
+> Se desejar implantar uma nova versão, utilize o Remix IDE.
 
-### ⚙️ Detalhes da Rede (Arbitrum Sepolia)
+---
 
-Se você precisar adicionar ou reconfigurar a rede Arbitrum Sepolia manualmente no MetaMask, utilize as seguintes informações:
+## ⚙️ Detalhes da Rede (Arbitrum Sepolia)
+
+Se precisar adicionar manualmente a rede no MetaMask:
 
 | Parâmetro | Valor |
 | :--- | :--- |
-| **Network Name** (Nome da Rede) | Arbitrum Sepolia |
-| **New RPC URL** (URL RPC) | `https://sepolia-rollup.arbitrum.io/rpc` |
-| **Chain ID** (ID da Cadeia) | `421614` |
-| **Currency Symbol** (Símbolo) | `ETH` |
-| **Block Explorer URL** (Explorer) | `https://sepolia.arbiscan.io/` |
+| **Network Name** | Arbitrum Sepolia |
+| **New RPC URL** | `https://sepolia-rollup.arbitrum.io/rpc` |
+| **Chain ID** | `421614` |
+| **Currency Symbol** | ETH |
+| **Block Explorer URL** | [https://sepolia.arbiscan.io/](https://sepolia.arbiscan.io/) |
 
-## ✔️ Técnicas e tecnologias utilizadas
+---
 
-- **Solidity** (Linguagem do Smart Contract)
-- **Ethereum** / EVM (Máquina Virtual Ethereum)
-- **Rede de Teste Arbitrum Sepolia**
-- **Remix IDE** (Para desenvolvimento e deploy)
-- **HTML/CSS/JavaScript** (Para o Frontend)
-- **Ethers.js** (Para a comunicação JavaScript/Blockchain)
-- **MetaMask** (Para gerenciamento de carteira e transações)
-- Padrão **"Swap and Pop"** para otimização de remoção de arrays.
+## ✔️ Técnicas e Tecnologias Utilizadas
+
+- **Solidity** – Linguagem do Smart Contract  
+- **Ethereum / EVM** – Execução do contrato  
+- **Rede de Teste Arbitrum Sepolia**  
+- **Remix IDE** – Desenvolvimento e deploy  
+- **HTML / CSS / JavaScript** – Interface Web  
+- **Ethers.js** – Comunicação entre Frontend e Blockchain  
+- **MetaMask** – Carteira e gerenciamento de transações  
+- Padrão **“Swap and Pop”** – Otimização de remoção de elementos em arrays  
+
+---
 
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
@@ -64,7 +85,11 @@ Se você precisar adicionar ou reconfigurar a rede Arbitrum Sepolia manualmente 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-## Desenvolvido por [Abner Barreto e João Henrique].
+---
+
+## 👨‍💻 Desenvolvedores
+
+Projeto desenvolvido por **Abner Barreto** e **João Henrique**.
 
 | [<img loading="lazy" src="https://github.com/AbnerBarretto.png" width=115><br><sub>Abner Barreto</sub>](https://github.com/AbnerBarretto) | [<img loading="lazy" src="https://github.com/lordpipoca.png" width=115><br><sub>João Henrique</sub>](https://github.com/lordpipoca) |
 | :---: | :---: |
