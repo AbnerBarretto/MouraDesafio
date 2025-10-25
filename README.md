@@ -1,6 +1,6 @@
 # <h1 align="center">MouraBateria Smart Contract (Solidity)</h1>
 
-![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIDO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM+DESENVOLVIMENTO&color=FFD700&style=for-the-badge)
 
 ## 🧾 Resumo do projeto
 Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**.  
@@ -84,6 +84,26 @@ Se precisar adicionar manualmente a rede no MetaMask:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+---
+
+## 🚀 Próximos Passos e Otimizações Futuras (Roadmap)
+
+Este projeto é um MVP funcional. Os seguintes recursos e otimizações estão planejados para a próxima fase de desenvolvimento:
+
+### Smart Contract (Segurança e Eficiência)
+
+- [ ] **Otimizar Armazenamento:** Migrar o array (`Bateria[]`) para um `mapping` com IDs permanentes para eliminar a fragilidade de índices causada pela função `removerBaterias`.
+- [ ] **Melhorar Rastreabilidade:** Adicionar `Events` em todas as funções de alteração de estado (`cadastrar`, `atualizar`, `remover`) para melhorar a auditoria e a comunicação com o Front-end.
+
+### Front-end e Usabilidade (UX)
+
+- [ ] **Adicionar Filtros:** Implementar um campo de busca/filtro na seção de listagem por Número de Série, Lote ou Tipo de Bateria.
+- [ ] **Reforçar Validação:** Adicionar validações de formato (RegEx) para campos de entrada como "Número de Série" e "Lote de Fabricação", além de impedir o cadastro de datas futuras.
+- [ ] **Aviso de Rede:** Implementar uma verificação no JavaScript para notificar o usuário caso ele esteja conectado a uma rede diferente da Arbitrum Sepolia.
+
+### Design e Estética
+- [ ] Otimizar o design responsivo para tablets (telas entre 768px e 1024px).
 
 ---
 
