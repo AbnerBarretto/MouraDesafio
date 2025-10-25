@@ -34,6 +34,18 @@ A forma mais rápida de usar é através do **deploy online**. Se você for roda
 
 > **Nota:** O endereço do Contrato Inteligente já está configurado no arquivo `index.html` e aponta para a versão mais recente na Arbitrum Sepolia. Se for necessário um novo deploy, siga o processo do Remix.
 
+### ⚙️ Detalhes da Rede (Arbitrum Sepolia)
+
+Se você precisar adicionar ou reconfigurar a rede Arbitrum Sepolia manualmente no MetaMask, utilize as seguintes informações:
+
+| Parâmetro | Valor |
+| :--- | :--- |
+| **Network Name** (Nome da Rede) | Arbitrum Sepolia |
+| **New RPC URL** (URL RPC) | `https://sepolia-rollup.arbitrum.io/rpc` |
+| **Chain ID** (ID da Cadeia) | `421614` |
+| **Currency Symbol** (Símbolo) | `ETH` |
+| **Block Explorer URL** (Explorer) | `https://sepolia.arbiscan.io/` |
+
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - **Solidity** (Linguagem do Smart Contract)
