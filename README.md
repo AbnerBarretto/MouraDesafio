@@ -35,7 +35,7 @@ O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** 
 
 Você pode interagir com a aplicação diretamente pelo **deploy online** ou acessar o código-fonte:
 
-- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio.vercel.app/#)  
+- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://desafiomouraweb3.vercel.app/)  
 - **💻 Código Fonte (GitHub):** [Repositório MouraBateria](https://github.com/AbnerBarretto/MouraBateria)  
 - **⬇️ Baixar ZIP:** [Download do Projeto](https://github.com/AbnerBarretto/MouraBateria/archive/refs/heads/main.zip)
 
