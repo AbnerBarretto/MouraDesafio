@@ -10,11 +10,15 @@ O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** 
 
 ---
 
-## 🎨 Layout da Aplicação
+## 🎨 Demonstração de Uso
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ec97ab68-61b0-4434-8598-6d4f76c74536" alt="Interface Moura Bateria" width="850">
+    <video controls width="850" loop autoplay muted>
+        <source src="https://raw.githubusercontent.com/AbnerBarretto/MouraDesafio/main/assets/VideoDemonstracaoMoura.webm" type="video/webm">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
 </p>
-<p align="center"><em>Interface principal da aplicação Moura Bateria</em></p>
+<p align="center"><em>Vídeo demonstrando o fluxo de Cadastro, Listagem e interação com o Smart Contract.</em></p>
 
 ---
 
