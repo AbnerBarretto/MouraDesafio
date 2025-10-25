@@ -10,13 +10,12 @@ O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** 
 
 ---
 
-## 🎨 Demonstração de Uso
+## 🎬 Demonstração em Ação
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AbnerBarretto/MouraDesafio/main/assets/VideoDemonstracaoMoura.gif" alt="Demonstração do Fluxo de Uso" width="850">
+ <img src="https://raw.githubusercontent.com/AbnerBarretto/MouraDesafio/main/assets/VideoDemonstracaoMoura.gif" alt="Demonstração do Fluxo de Uso" width="850">
 </p>
-
-<p align="center"><em>Vídeo demonstrando o fluxo de Cadastro, Listagem e interação com o Smart Contract.</em></p>
+<p align="center"><em>Demonstração do fluxo de conexão, cadastro, listagem e filtro interativo.</em></p>
 
 ---
 
