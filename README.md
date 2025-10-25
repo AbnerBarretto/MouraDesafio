@@ -1,12 +1,29 @@
-# <h1 align="center">MouraBateria Smart Contract (Solidity)</h1>
+# Sistema de Rastreabilidade Moura: Arquitetura de Próxima Geração (Next-Gen)
 
 ![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM+DESENVOLVIMENTO&color=FFD700&style=for-the-badge)
 
-## 🧾 Resumo do projeto
-Este projeto consiste no desenvolvimento e implantação de um **Smart Contract (Contrato Inteligente)** escrito em **Solidity**.  
-A aplicação, chamada `MouraBateria`, atua como um **registro descentralizado de baterias defeituosas** em uma **Blockchain de Camada 2 (L2)** compatível com a **EVM (Ethereum Virtual Machine)**, utilizando a **rede de teste Arbitrum Sepolia**.  
+## 🎯 Visão Estratégica & Diferencial Competitivo
 
-O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** — desde a criação do contrato em Solidity (com lógica de manipulação de arrays via padrão *Swap and Pop*) até a interação com o contrato por meio de uma **interface HTML/JavaScript**, utilizando **Ethers.js** e **MetaMask**.
+Este projeto é um **Produto Mínimo Viável (MVP)** de alta qualidade, focado em **UX Vencedora, Segurança Imediata** e um **Plano de Evolução Arquitetural** claro.
+
+Nossa abordagem reconhece as limitações da manipulação de arrays na Blockchain e propõe a rota mais eficiente para a V2, garantindo que o investimento seja feito em uma solução escalável.
+
+### Estratégia de Desenvolvimento (MVP + Roadmap)
+
+| Característica | Solução Atual (MVP) | **Visão de Arquitetura V2** | Vantagem Competitiva |
+| :--- | :--- | :--- | :--- |
+| **Integridade do ID** | Array mutável (Swap-and-Pop) | **`Mapping` com ID Permanente** (ID imutável para 100% de Auditabilidade). | Essencial para rastreabilidade de longo prazo. |
+| **Segurança Crítica** | **Controle de Acesso `onlyOwner`** | Gestão de Acesso Modular (`RBAC`) e Transferência de Propriedade. | **Maior segurança imediata** que a concorrência sem `onlyOwner`. |
+| **UX de Auditoria** | Filtros em tempo real. | **Filtro Discreto/Minimalista** (Interface mais limpa do que a concorrência). | |
+
+---
+
+## 🎨 Design & Experiência do Usuário (UX/UI)
+
+Priorizamos uma interface limpa e intuitiva, alinhada à identidade visual da Moura.
+
+- **Filtro Minimalista (Destaque UX):** O filtro de busca é acionado por um **ícone discreto** e se expande suavemente, mantendo a interface despoluída (superando designs que usam filtros sempre visíveis).
+- **Feedback Rico:** Uso de **Toast Notifications** para sucesso/erro e **Modal de Confirmação** para remoção.
 
 ---
 
@@ -20,42 +37,25 @@ O objetivo principal é demonstrar o **ciclo completo de desenvolvimento Web3** 
 
 ---
 
-## 🔨 Funcionalidades do projeto
 
-- **Registro** descentralizado de baterias defeituosas (tipo, uso, número de série e lote).  
-- **Listagem** completa de todos os registros armazenados no contrato.  
-- **Remoção** otimizada de registros usando o padrão *Swap and Pop* para reduzir custo de gás.  
-- **Atualização** de dados de registros existentes.  
-- **Interação** com o contrato via frontend (HTML/JS) e carteira MetaMask.  
-- **Transparência** e imutabilidade dos dados garantidas pela Blockchain.
+## 🔨 Funcionalidades do Projeto
 
----
-
-## 📁 Acesso ao projeto
-
-Você pode interagir com a aplicação diretamente pelo **deploy online** ou acessar o código-fonte:
-
-- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://desafiomouraweb3.vercel.app/)  
-- **💻 Código Fonte (GitHub):** [Repositório MouraBateria](https://github.com/AbnerBarretto/MouraBateria)  
-- **⬇️ Baixar ZIP:** [Download do Projeto](https://github.com/AbnerBarretto/MouraBateria/archive/refs/heads/main.zip)
+- **Registro** descentralizado de baterias defeituosas (tipo, uso, número de série e lote).
+- **Listagem** completa de todos os registros armazenados no contrato.
+- **Busca Avançada (UX):** Filtro por Número de Série e Tipo de Bateria.
+- **Remoção** otimizada de registros usando o padrão *Swap and Pop* para reduzir custo de gás.
+- **Controle de Acesso:** Funções de escrita restritas ao `onlyOwner`.
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## ⚙️ Detalhes do Projeto e Tecnologias
 
-1. **Clone ou baixe** o repositório.  
-2. **Abra o arquivo** `index.html` em seu navegador.  
-3. **Configure o MetaMask:** conecte sua carteira à **Rede de Teste Arbitrum Sepolia**.  
-4. **Interaja:** clique em “Conectar Carteira” e comece a registrar, atualizar e remover baterias defeituosas.  
+- **Smart Contract:** `MouraBateria` em **Solidity**.
+- **Segurança:** Implementação de **`onlyOwner`**.
+- **Framework Web3:** **Ethers.js** (biblioteca moderna).
+- **Rede de Deploy:** Arbitrum Sepolia.
 
-> 💡 **Nota:** O endereço do contrato já está configurado no `index.html`, apontando para a versão mais recente na Arbitrum Sepolia.  
-> Se desejar implantar uma nova versão, utilize o Remix IDE.
-
----
-
-## ⚙️ Detalhes da Rede (Arbitrum Sepolia)
-
-Se precisar adicionar manualmente a rede no MetaMask:
+### Configuração da Rede (Arbitrum Sepolia)
 
 | Parâmetro | Valor |
 | :--- | :--- |
@@ -67,45 +67,26 @@ Se precisar adicionar manualmente a rede no MetaMask:
 
 ---
 
-## ✔️ Técnicas e Tecnologias Utilizadas
+## 📁 Acesso e Execução
 
-- **Solidity** – Linguagem do Smart Contract  
-- **Ethereum / EVM** – Execução do contrato  
-- **Rede de Teste Arbitrum Sepolia**  
-- **Remix IDE** – Desenvolvimento e deploy  
-- **HTML / CSS / JavaScript** – Interface Web  
-- **Ethers.js** – Comunicação entre Frontend e Blockchain  
-- **MetaMask** – Carteira e gerenciamento de transações  
-- Padrão **“Swap and Pop”** – Otimização de remoção de elementos em arrays  
-
----
-
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- **🔗 Aplicação Online (Vercel):** [Moura Bateria - Controle de Defeito](https://moura-desafio-3w3j.vercel.app/)
+- **💻 Código Fonte (GitHub):** [Repositório MouraBateria](https://github.com/AbnerBarretto/MouraDesafio)
 
 ---
 
 ## 🚀 Próximos Passos e Otimizações Futuras (Roadmap)
 
-Este projeto é um MVP funcional. Os seguintes recursos e otimizações estão planejados para a próxima fase de desenvolvimento:
+Os seguintes recursos estão planejados para a próxima fase:
 
 ### Smart Contract (Segurança e Eficiência)
 
-- [ ] **Otimizar Armazenamento:** Migrar o array (`Bateria[]`) para um `mapping` com IDs permanentes para eliminar a fragilidade de índices causada pela função `removerBaterias`.
-- [ ] **Melhorar Rastreabilidade:** Adicionar `Events` em todas as funções de alteração de estado (`cadastrar`, `atualizar`, `remover`) para melhorar a auditoria e a comunicação com o Front-end.
+- [ ] **Otimizar Integridade (V2):** Migrar o array (`Bateria[]`) para um `mapping` com IDs permanentes.
+- [ ] **Auditoria:** Adicionar `Events` em todas as funções de alteração de estado para melhorar a rastreabilidade.
 
 ### Front-end e Usabilidade (UX)
 
-- [x] **Adicionar Filtros:** Implementar um campo de busca/filtro na seção de listagem por Número de Série, Lote ou Tipo de Bateria.
-- [ ] **Reforçar Validação:** Adicionar validações de formato (RegEx) para campos de entrada como "Número de Série" e "Lote de Fabricação", além de impedir o cadastro de datas futuras.
-- [ ] **Aviso de Rede:** Implementar uma verificação no JavaScript para notificar o usuário caso ele esteja conectado a uma rede diferente da Arbitrum Sepolia.
-
-### Design e Estética
-- [ ] Otimizar o design responsivo para tablets (telas entre 768px e 1024px).
+- [x] **Filtro Discreto/Minimalista:** Implementar filtro avançado por Número de Série e Tipo de Bateria. (Feito)
+- [ ] **Reforçar Validação:** Adicionar validações de formato (RegEx) para campos críticos, além de impedir o cadastro de datas futuras.
 
 ---
 
